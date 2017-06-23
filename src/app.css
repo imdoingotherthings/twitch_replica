@@ -1,0 +1,79 @@
+html, body {
+  font-family: Avenir, sans-serif;
+  max-height: 100%;
+  background: #6441a5;
+}
+
+.body-2 {
+  background: #815fc0;
+  margin: 3% auto;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.first {
+  /*border: 2px solid red;*/
+}
+
+.second {
+  /*border: 2px solid yellow;*/
+  margin: 0 auto;
+  padding: 0;
+}
+
+.background {
+  /*border: 2px solid orange;*/
+  margin: 18% auto;
+  background: #ecf0f1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.background-right-hand {
+  /*border: 2px solid orange;*/
+  margin: 20% auto;
+  background: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+}
+
+
+.btn-secondary {
+  float: right;
+  border: none;
+  background: none;
+  outline-color: none;
+  text-decoration: none;
+}
+
+.btn-secondary:focus{
+  border: none;
+  outline-color: none;
+}
+
+.btn-secondary:active {
+  outline: none;
+}
+
+.form-control {
+  margin: 10px auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 22px;
+  text-align: center;
+}
+
+.third {
+  /*border: 2px solid orange;*/
+}

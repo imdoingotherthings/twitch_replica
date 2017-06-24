@@ -25,6 +25,15 @@ html, body {
   margin: 0 auto;
 }
 
+.btn.sign-up {
+  float: right;
+  background-color: white;
+  color: black;
+}
+
+.btn.sign-up a {
+  color: black;
+}
 .btn-secondary {
   float: right;
   border: none;

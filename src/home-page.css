@@ -6,7 +6,7 @@ html, body {
 
 .body-2 {
   background: #815fc0;
-  margin: 4% auto;
+  margin: 3% auto;
   height: 100%;
   border-radius: 4px;
   box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
@@ -84,4 +84,41 @@ h1 {
   font-weight: lighter;
   font-size: 22px;
   text-align: center;
+}
+
+video {
+  /*border: 2px solid black;*/
+  width: 100%;
+  height: auto;
+}
+
+.sM {
+  /*border: 2px solid red;*/
+  display: inline-block;
+  padding: 5px;
+}
+
+#social-media {
+  /*border: 2px solid blue;*/
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+}
+
+#gamingTitle {
+  /*border: 2px solid red;*/
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  width: 50%;
+  padding-bottom: 8px;
+}
+
+.sM a {
+  color: black;
+  text-decoration: none;
+}
+
+.sM a:visited {
+  text-decoration: none;
 }

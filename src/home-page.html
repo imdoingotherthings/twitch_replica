@@ -9,19 +9,56 @@
     <link rel="stylesheet" type="text/css" href="home-page.css">
   </head>
   <body>
+    <!-- NAVBAR STARTS -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-taregt="#navBar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="home-page.html">Twitch</a>
+        <div class="collapse navbar-collapse" id="navBar">
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Notifications</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Profile
+              <span class="caret"></span>
+            </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Become a streamer</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="index.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ==================== -->
+    <!-- NAVBAR ENDS -->
+    <!-- ==================== -->
+
     <div class="container">
       <div class="row">
         <div class="col-xs-12 body-2">
-        <!-- FIRST COLUMN LEFT HAND SIDE SIGN UP/LOGIN FORM -->
+        <!-- FIRST COLUMN LEFT HAND SIDE -->
         <div class="col-md-6 col-xs-12">
-          <!-- <p class="first">Hello</p> -->
           <div class="background">
-            <hr>
             <div class="form-group row">
-
+              <p id="gamingTitle"><em><strong>Gaming Title Goes Here</strong></em></p>
+              <video width="445" height="280" controls>
+                <source src="#" type="video/mp4">
+              </video>
             </div>
-            <p id="form-message"></p>
-            <hr>
+            <ul id="social-media">
+              <li class="sM"><a href="#">Twitter</a></li>
+              <li class="sM"><a href="#">Instagram</a></li>
+              <li class="sM"><a href="#">Facebook</a></li>
+            </ul>
           </div>
         </div>
         <!-- FORM LEFT HAND SIDE ENDS -->
@@ -42,5 +79,12 @@
       </div>
     </div>
     <script src="app.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
   </body>
 </html>

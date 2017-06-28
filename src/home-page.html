@@ -20,18 +20,17 @@
         <a class="navbar-brand" href="home-page.html">Twitch</a>
         <div class="collapse navbar-collapse" id="navBar">
           <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Notifications</a></li>
+          <li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i> Notifications</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              Profile
-              <span class="caret"></span>
+              <i class="fa fa-user-o" aria-hidden="true"></i> Profile<span class="caret"></span>
             </a>
               <ul class="dropdown-menu">
                 <li><a href="#">Friends</a></li>
                 <li><a href="#">Become a streamer</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Settings</a></li>
-                <li><a href="index.html">Logout</a></li>
+                <li><a href="index.html" id="logout">Logout</a></li>
               </ul>
             </li>
           </ul>
@@ -42,6 +41,9 @@
     <!-- NAVBAR ENDS -->
     <!-- ==================== -->
 
+    <!-- ======================== -->
+    <!-- INSIDE THE CONTENT -->
+    <!-- ======================== -->
     <div class="container">
       <div class="row">
         <div class="col-xs-12 body-2">
@@ -50,9 +52,24 @@
           <div class="background">
             <div class="form-group row">
               <p id="gamingTitle"><em><strong>Gaming Title Goes Here</strong></em></p>
-              <video width="445" height="280" controls>
+              <!-- VIDEO -->
+              <video id="video" height="360" width="640px" loop controls>
                 <source src="#" type="video/mp4">
               </video>
+              <!-- Video Controls -->
+              <!-- <div id="video-controls">
+                <button type="button" class="btn btn-default pL" onclick="playVideo" id="play-pause"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <div class="btn-group dropup">
+                  <button type="button" id="volume" class="btn btn-default dropdown-toggle vL" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <input type="range" orient="vertical" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                  </div>
+                </div>
+                <button type="button" id="full-screen" class="btn btn-default fS"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button>
+                <input type="range" class="volume" id="volume-bar" min="0" max="1" step="0.1" value="1">
+              </div> -->
             </div>
             <ul id="social-media">
               <li class="sM"><a href="#">Twitter</a></li>
@@ -78,7 +95,9 @@
       </div>
       </div>
     </div>
-    <script src="app.js"></script>
+
+    <script src="homePage.js"></script>
+    <script src="https://use.fontawesome.com/3c5d8f283b.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="

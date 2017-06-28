@@ -1,0 +1,77 @@
+html, body {
+  font-family: Avenir, sans-serif;
+  max-height: 100%;
+  background: #ecf0f1;
+}
+
+.container-fluid {
+  background: #815fc0;
+}
+
+.body-2 {
+  background: #815fc0;
+  margin: 3% auto;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 20px 10px rgba(0,0,0,0.1);
+}
+
+.background-right-hand {
+  /*border: 2px solid orange;*/
+  margin: 10% auto;
+  background: #ecf0f1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+}
+
+#right {
+  color: white;
+  text-decoration: none;
+  float: right;
+  margin: 14px auto;
+}
+
+#right:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#right:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-brand:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.form-control {
+  margin: 10px auto;
+}
+
+@keyframes breathe {
+  0% {
+    color: yellow;
+    opacity: 1;
+  }
+  60% {
+    color: green;
+    opacity: 0.5;
+  }
+  100% {
+    color: white;
+    opacity: 1;
+  }
+}

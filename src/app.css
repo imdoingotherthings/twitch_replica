@@ -34,6 +34,8 @@ html, body {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+  animation-name: leftIntro;
+  animation-duration: 0.3s;
 }
 
 .background-right-hand {
@@ -43,6 +45,8 @@ html, body {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+  animation-name: rightIntro;
+  animation-duration: 0.5s;
 }
 
 .btn-secondary {
@@ -67,7 +71,7 @@ html, body {
 }
 
 .btn.btn-secondary.login {
-  background-color: white; 
+  background-color: white;
 }
 
 a {
@@ -93,4 +97,27 @@ h1 {
 
 .third {
   /*border: 2px solid orange;*/
+}
+
+#logoutSucess {
+  background: red;
+  color: red;
+  /*-webkit-animation: dropDown 5s 5s;*/
+  border: 2px solid green;
+}
+
+@keyframes leftIntro {
+  0% { transform: translate(-1000%, 0); }
+  100% { transform: translate(0%, 0); }
+}
+
+@keyframes rightIntro {
+  0% { transform: translate(1000%, 0); }
+  100% { transform: translate(0%, 0); }
+}
+
+@keyframes pTag {
+  0% { transform: translate(5%, 0); }
+  50% { transform: translate(-3%, 0); }
+  100% { transform: translate(0%, 0); }
 }
